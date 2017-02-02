@@ -69,3 +69,8 @@ where:
 - `no mpi / valg` means no mpi was used but valgrind was called
 - `mpi / valg` means no mpi was used and also valgrind was used in order `mpirun -np 2 valgrind <binary>`
 - `valg / mpi ` means no mpi was used and also valgrind was used in order `valgrind mpirun -np 2 <binary>`
+
+
+## Travis 
+
+added integration with travis
