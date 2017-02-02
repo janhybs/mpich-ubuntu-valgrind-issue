@@ -4,7 +4,9 @@ services:
   - docker
   
 before_install:
-  - bin/install.sh
+  - whoami
+  - pwd
+  - sudo bin/install.sh
 
 script:
-  - bin/test.sh
+  - sudo bin/test.sh
