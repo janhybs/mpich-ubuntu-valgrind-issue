@@ -6,7 +6,10 @@ services:
 before_install:
   - whoami
   - pwd
-  - sudo bin/install.sh
+  - docker build --tag base base
+  - docker build --tag openmpi openmpi
+  - docker build --tag mpich mpich
+  - docker build --tag mpich-blcr mpich-blcr
 
 script:
-  - sudo bin/test.sh
+  - bin/test.sh
