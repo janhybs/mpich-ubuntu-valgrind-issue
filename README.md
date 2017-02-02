@@ -54,10 +54,11 @@ Hello world (Rank: 0 / Host: fa784864fb37)
 
 Tests are producing these results:
 
-| Library | no mpi / no valg   | mpi / no valg      | no mpi / valg      | mpi / valg         | valg / mpi         |
-|---------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| mpich   | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: |
-| openmpi | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Library    |  no mpi / no valg  |    mpi / no valg   |    no mpi / valg   |     mpi / valg     |     valg / mpi     |
+|------------|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
+| mpich      | :heavy_check_mark: | :heavy_check_mark: |         :x:        |         :x:        | :heavy_check_mark: |
+| mpich-blcr | :heavy_check_mark: | :heavy_check_mark: |         :x:        |         :x:        | :heavy_check_mark: |
+| openmpi    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 
 
