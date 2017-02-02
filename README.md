@@ -48,3 +48,23 @@ Hello world (Rank: 0 / Host: fa784864fb37)
 ...
 
 ```
+
+## Results
+
+
+Tests are producing these results:
+
+| Library | no mpi / no valg   | mpi / no valg      | no mpi / valg      | mpi / valg         | valg / mpi         |
+|---------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| mpich   | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :heavy_check_mark: |
+| openmpi | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
+
+
+where:
+
+- `no mpi / no valg` means no mpi or valgrind used
+- `mpi / no valg` means mpirun was used but no valgrind
+- `no mpi / valg` means no mpi was used but valgrind was called
+- `mpi / valg` means no mpi was used and also valgrind was used in order `mpirun -np 2 valgrind <binary>`
+- `valg / mpi ` means no mpi was used and also valgrind was used in order `valgrind mpirun -np 2 <binary>`
