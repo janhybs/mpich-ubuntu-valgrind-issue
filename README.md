@@ -1,5 +1,9 @@
 # mpich-ubuntu-valgrind-issue
-Repository for testing valgrind related bug in ubuntu. This repository uses docker.
+Repository for testing valgrind related bug in ubuntu. This repository uses [docker](https://www.docker.com/).
+
+**Note:**
+
+*Docker will mount your `$HOME` dir, so project will work as long as it is somewhere in your `$HOME`.*
 
 
 
